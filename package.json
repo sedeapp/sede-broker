@@ -1,0 +1,24 @@
+{
+  "name": "@sedeapp/sede-broker",
+  "version": "0.1.0",
+  "description": "Just a simple message broker.",
+  "main": "./src/sedeBroker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedeapp/sede-broker.git"
+  },
+  "keywords": [
+    "sede",
+    "simple",
+    "broker"
+  ],
+  "author": "Rafael Ribeiro (https://github.com/nokcode)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedeapp/sede-broker/issues"
+  },
+  "homepage": "https://github.com/sedeapp/sede-broker#readme"
+}
