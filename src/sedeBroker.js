@@ -17,11 +17,12 @@ class SedeBroker {
             this.config[key] = config[key];
         }
         
-        // show annoying warning
         if (this.config.warn && this.config.showAnnoyingWarning) {
-            console.log('[SedeBroker]: Logging warnings when no one are subscribed for a published message.');
-            console.log('[SedeBroker]: If you want to disable this behavior, set config.warn = false,');
-            console.log('[SedeBroker]: or to disable just that tip set config.showAnnoyingWarning = false.');
+            console.info(
+                "Loggin warnings when no one are subscribed.\n" +
+                "If you want to disable this behavior, set config.warn = false,\n" +
+                "or to disable just that tip set config.showAnnoyingWarning = false"
+            )
         }
     }
 
@@ -60,9 +61,8 @@ class SedeBroker {
             throw Error(`The message must be an object!`);
         }
 
-        // no one subscribed...
         if (this._count == 0 && this.config.warn) {
-            console.log(`[SedeBroker]: No one subscribed for \'${message.constructor.name}\' message...`);
+            console.warn(`No one subscribed...`);
             return;
         }
 
