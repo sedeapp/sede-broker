@@ -1,0 +1,9 @@
+# Disallow all
+*
+# Alow
+!.gitignore
+!.gitkeep
+!LICENSE
+!package.json
+!README.md
+!**/
