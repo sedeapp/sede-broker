@@ -19,7 +19,7 @@ class SedeBroker {
         
         if (this.config.warn && this.config.showAnnoyingWarning) {
             console.info(
-                "Loggin warnings when no one are subscribed.\n" +
+                "Logging warnings when no one are subscribed.\n" +
                 "If you want to disable this behavior, set config.warn = false,\n" +
                 "or to disable just that tip set config.showAnnoyingWarning = false"
             )
