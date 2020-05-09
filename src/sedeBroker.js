@@ -69,11 +69,11 @@ class SedeBroker {
         const shallow = this._subscribers
         const errors = []
 
-        // keep it simple synchronous
+        // keep it simple
         for (let id in shallow) {
             try {
                 if (message instanceof shallow[id]._proto) {
-                    shallow[id]._handler(message)
+                    setImmediate(() => shallow[id]._handler(message))
                 }
             }
             catch(e) {
